@@ -1,20 +1,21 @@
 # MY PROGRAM CALCOLATOR :-)
-# version : 0.1v
+# version : 0.2v
 
 
 first_number = float(input("Enter First Number : "))
 opr = input("Enter An opration (+ , - , / , *) : ")
 second_number = float(input("Enter Second Number : "))
 
-if opr == "+":
-    print(f"{first_number} + {second_number} = {first_number + second_number}")
-elif opr == "-":
-    print(f"{first_number} - {second_number} = {first_number - second_number}")
-elif opr == "/":
-    print(f"{first_number} / {second_number} = {first_number / second_number}")
-elif opr == "*":
-    print(f"{first_number} * {second_number} = {first_number * second_number}")
+match opr :
+    case "+":
+        print(f"{first_number} + {second_number} = {first_number + second_number}")
+    case "-":
+        print(f"{first_number} - {second_number} = {first_number - second_number}")
+    case "*":
+        print(f"{first_number} * {second_number} = {first_number * second_number}")
+    case "/":
+        print(f"{first_number} / {second_number} = {first_number / second_number}")
+    case _:
+        print("Please Enter valid operation !!!")
 
-else :
-    print("Please Enter valid operation !!!")
 
